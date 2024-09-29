@@ -1,0 +1,20 @@
+[project]
+name = "democrobot"
+version = "0.0.1"
+description = "A collection of democracy-focused ML/AI models to support data processing and analysis of legislative and election data for the platform."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs-material>=9.5.39",
+]
+
+[tool.uv]
+python-preference = "managed"
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "double"
+
+[tool.ruff.format]
+# Prefer single quotes over double quotes.
+quote-style = "single"
